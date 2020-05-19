@@ -4,8 +4,8 @@ const Navigation = ({onSearch,searchBar}) =>{
     return(
         <div className='flex justify-between'>
             <Logo />
-            <h2 className ='tc'>Covid19-India Tracker</h2>
-            <input onChange={onSearch} className="h2 w50 pa2" type = "search" placeholder="Search State" />
+           
+            <input onChange={onSearch} className="h2 w50 ma2 pa2" type = "search" placeholder="Search State" />
         </div>
     );
 }

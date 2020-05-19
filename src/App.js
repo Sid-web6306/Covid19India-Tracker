@@ -31,6 +31,7 @@ class App extends Component{
     return (
       <div>
         <Navigation onSearch = {this.onSearchBarHandler}/>
+        <h1 className ='tc'>Covid19-India Tracker</h1>
         <div className='tc'>
           <CardList states={filteredStates}/>
         </div>
