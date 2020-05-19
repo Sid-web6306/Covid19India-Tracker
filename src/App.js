@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
+import CardList from './Components/cardList';
+
+import Navigation from './Components/navigation';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  constructor(){
+    super()
+    this.state={
+      states:[],
+      searchBar:''
+    }
+  }
+  componentDidMount(){
+    fetch('https://covid-india-cases.herokuapp.com/states')
+    .then(response=>response.json())
+    .then(states => this.setState({states:states}));
+  }
+
+
+  onSearchBarHandler = (event)=>{
+    this.setState({searchBar:event.target.value})
+  }
+  
+  render(){
+    const {states,searchBar}=this.state;
+    const filteredStates= states.filter(state=>{
+      return state.state.toLowerCase().includes(searchBar.toLowerCase());
+    })
+    return (
+      <div>
+        <Navigation onSearch = {this.onSearchBarHandler}/>
+        <div className='tc'>
+          <CardList states={filteredStates}/>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default App;
