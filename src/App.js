@@ -13,7 +13,7 @@ class App extends Component{
     }
   }
   componentDidMount(){
-    fetch('https://covid-india-cases.herokuapp.com/states')
+    fetch('https://covid-india-cases.herokuapp.com/states/')
     .then(response=>response.json())
     .then(states => this.setState({states:states}));
   }

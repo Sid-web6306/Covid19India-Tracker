@@ -4,7 +4,7 @@ import Card from './card';
 
 const cardList = ({states}) =>{
     return (
-        <div>{
+        <div className="">{
             states.map((state,i)=>{
                 return (
                     <Card
