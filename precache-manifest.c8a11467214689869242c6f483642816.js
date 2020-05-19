@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ead1f982171e6c4cda7b71ef5ec24034",
+    "revision": "76978833deacb776efec40f0d24cd3d3",
     "url": "/Covid19India-Tracker/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Covid19India-Tracker/static/css/2.3c03f26f.chunk.css"
   },
   {
-    "revision": "cfcfa369f37acd08c453",
+    "revision": "ed5d85d7886f23bd7f84",
     "url": "/Covid19India-Tracker/static/css/main.53784db0.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Covid19India-Tracker/static/js/2.b1911d48.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cfcfa369f37acd08c453",
-    "url": "/Covid19India-Tracker/static/js/main.4c15cfc1.chunk.js"
+    "revision": "ed5d85d7886f23bd7f84",
+    "url": "/Covid19India-Tracker/static/js/main.2b05d244.chunk.js"
   },
   {
     "revision": "a6bc5c96888f9cac1f0c",
